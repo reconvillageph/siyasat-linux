@@ -1,0 +1,26 @@
+#!/bin/bash
+
+MHA_DIR="$HOME/.local/tools/mha"
+
+LOCK="/tmp/.mha.lock"
+
+curl -sL localhost:5002| grep spider 2>&1 >> /dev/null
+if [ $? -eq 0 ]; then
+    echo 'mha is running.'
+    touch $LOCK
+else
+    echo 'mha is NOT running.'
+    rm $LOCK
+fi
+
+if [ ! -f $LOCK  ];then
+    cd $MHA_DIR
+    source venv/bin/activate
+     cd $MHA_DIR/mha
+    python3 server.py -b 127.0.0.1 -p 5002&
+    touch $LOCK
+    sleep 5
+fi
+
+firefox http://127.0.0.1:5002 &
+exit

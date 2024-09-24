@@ -1,0 +1,25 @@
+#!/bin/bash
+
+SPIDERFOOT_DIR="$HOME/.local/tools/spiderfoot"
+
+LOCK="/tmp/.spiderfoot.lock"
+
+curl -sL localhost:5001| grep spider 2>&1 >> /dev/null
+if [ $? -eq 0 ]; then
+    echo 'Spiderfoot is running.'
+    touch $LOCK
+else
+    echo 'Spiderfoot is NOT running.'
+    rm $LOCK
+fi
+
+if [ ! -f $LOCK  ];then
+    cd $SPIDERFOOT_DIR
+    source venv/bin/activate
+    python3 ./sf.py -l 127.0.0.1:5001&
+    touch $LOCK
+    sleep 5
+fi
+
+firefox http://127.0.0.1:5001 &
+exit

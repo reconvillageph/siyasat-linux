@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=Spiderfoot
+Comment=OSINT automation tool.
+Exec=/home/siyasat/.local/bin/spiderfoot %F
+Terminal=false
+Icon=spiderfoot
+Type=Application

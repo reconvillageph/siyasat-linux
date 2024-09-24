@@ -1,0 +1,5 @@
+#!/bin/bash
+
+echo "Provisioning Siyasat Linux.."
+salt-call -l debug state.apply distro
+

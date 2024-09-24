@@ -1,0 +1,6 @@
+[Desktop Entry]
+Type=Application
+Name=eMail Header Analyzer
+Exec=/home/siyasat/.local/bin/mha %F
+Icon=mha
+Comment=Analyze email headers.

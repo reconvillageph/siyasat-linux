@@ -1,0 +1,12 @@
+[Desktop Entry]
+Name=LinkScope
+Comment=LinkScope Client Online Investigation.
+GenericName=LinkScope
+Exec=/home/siyasat/.local/bin/linkscope %F
+Icon=linkscope
+Type=Application
+StartupNotify=false
+Categories=TextEditor;Development;IDE;
+MimeType=application/x-code-workspace;
+Actions=new-empty-window;
+

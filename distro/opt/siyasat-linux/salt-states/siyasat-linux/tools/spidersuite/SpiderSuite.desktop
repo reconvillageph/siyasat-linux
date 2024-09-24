@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=SpiderSuite
+Comment=Advance web security crawler for cyber security professionals.
+Exec=/home/siyasat/.local/bin/SpiderSuite
+Terminal=false
+Icon=SpiderSuite
+Type=Application

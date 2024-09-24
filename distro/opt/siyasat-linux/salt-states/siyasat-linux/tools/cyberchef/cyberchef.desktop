@@ -1,0 +1,12 @@
+[Desktop Entry]
+Name=CyberChef
+Comment=Decode and analyze.
+GenericName=Cyber Chef
+Exec=/home/siyasat/.local/bin/cyberchef %F
+Icon=cyberchef
+Type=Application
+StartupNotify=false
+Categories=TextEditor;Development;IDE;
+MimeType=application/x-code-workspace;
+Actions=new-empty-window;
+

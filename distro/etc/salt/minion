@@ -1,0 +1,6 @@
+
+master_type: disable
+file_client: local
+file_roots:
+  base:
+    - /opt/siyasat-linux/salt-states
