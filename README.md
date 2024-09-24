@@ -20,7 +20,7 @@ sha256sum: 06cfaf8f640c751dfab71918715fa8036ac7a9edc0712a721604faeda9ef4534
 - clone this repo:
 ```
 $ cd ~/
-$ git clone [this repo]
+$ git clone https://github.com/reconvillageph/siyasat-linux/
 ```
 
 - Start installation process as root:
