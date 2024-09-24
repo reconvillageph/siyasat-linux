@@ -9,5 +9,5 @@ nodejs-repo:
 
 nodejs:
   pkg.installed:
-    - pkgrepo: microsoft-vscode-repo
+    - pkgrepo: nodejs-repo
 
