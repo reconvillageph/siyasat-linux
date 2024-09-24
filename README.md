@@ -32,7 +32,6 @@ $ su -
 
 - This will take a while, so grab a cup of 'kapeng barako' ☕.
 - After a while, you should be presented with the summary of the salt-stack build.
-screenshot:
 - if after the build, you have some errors (due to any reasons), just re-run the install script until you get '**Failed: 0**' results. You can also try to run:
 
 ```
